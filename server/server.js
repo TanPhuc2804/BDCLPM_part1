@@ -70,7 +70,7 @@ app.use('/api/email',MailRoute)
 
 mongoose
     .connect(
-        `mongodb+srv://thymai1510:${process.env.MONGO_DB}@cluster0.ibhghsi.mongodb.net/?appName=Cluster0`
+        `${process.env.MONGO_DB}`
     )
     .then(() => {
       console.log("Connect successfully");

@@ -4,8 +4,8 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCircleCheck,faCircleXmark} from '@fortawesome/free-solid-svg-icons'
 export const openNotification = (status,message,description) => {
   notification.open({
-    message: (<div className= 'font-bold text-[20px]' style={{color:status ?"green" : "red"}} >{message}</div>),
-    description:(<div className= "text-[15px]" >{description}</div>),
+    message: (<div className= 'font-bold text-[20px]' id='notification' style={{color:status ?"green" : "red"}} >{message}</div>),
+    description:(<div className= "text-[15px]" id='notification-message'>{description}</div>),
     onClick: () => {
       console.log('Notification Clicked!');
     },
